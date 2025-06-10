@@ -19,6 +19,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <build>
+    <finalName>my-app</finalName>  <!-- 10Jun2025 added this line to Ensures JAR is named my-app.jar to solve deliver stage issue-->
     <pluginManagement>
       <plugins>
         <plugin>
@@ -38,6 +39,7 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.4.2</version>
         <configuration>
+          <finalName>my-app</finalName>  <!-- 10Jun2025 added this line to Ensures JAR is named my-app.jar to solve deliver stage issue-->
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
