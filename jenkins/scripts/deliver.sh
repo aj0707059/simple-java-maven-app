@@ -25,4 +25,6 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 current_path=$(pwd)
 echo "Current path: $current_path"
 set -x
-java -jar /var/jenkins_home/workspace/GitHubPipeline/target/${NAME}-${VERSION}.jar
+#commented on 10Jun2025 to resolve deliver stage issue
+#java -jar /var/jenkins_home/workspace/GitHubPipeline/target/${NAME}-${VERSION}.jar 
+java -jar target/my-app.jar
